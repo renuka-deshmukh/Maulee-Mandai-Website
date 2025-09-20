@@ -18,6 +18,7 @@ const Home = () => {
 
   return (
     <>
+    
       <div style={{ backgroundColor: "#f4f6f8ff" }}>
         <div className="container my-4 bg-light">
           <div className="row">

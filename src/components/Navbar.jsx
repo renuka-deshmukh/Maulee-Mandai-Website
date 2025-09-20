@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   return (
     <>
@@ -119,22 +120,15 @@ const Navbar = () => {
 
           <div className="collapse navbar-collapse" id="bottomNavbar">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item dropdown me-3">
+              <li className="nav-item me-3">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link"
                   href="#"
-                  id="categoryDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  data-bs-toggle="modal"
+                  data-bs-target="#categoryModal"
                 >
                   📂 Select Category
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="categoryDropdown">
-                  <li><Link className="dropdown-item" href="#">Vegetables</Link></li>
-                  <li><Link className="dropdown-item" href="#">Fruits</Link></li>
-                  <li><Link className="dropdown-item" href="#">Dairy</Link></li>
-                </ul>
               </li>
               <li className="nav-item me-3">
                 <Link className="nav-link active" to="/">Home</Link>
