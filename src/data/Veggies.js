@@ -107,7 +107,7 @@
     oldPrice: 35,
     unit: "1 Kg",
     discount: "28% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/AF/SE/OP/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/PP/VJ/CE/50068616/fresh-white-radish-500x500.jpg"
   },
   {
     id: 11,
@@ -118,7 +118,7 @@
     oldPrice: 45,
     unit: "1 Kg",
     discount: "22% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/HT/XH/VX/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2025/1/484827672/OP/BK/IH/129191472/a-grade-brinjal-vegetable-500x500.jpeg"
   },
   {
     id: 12,
@@ -129,7 +129,7 @@
     oldPrice: 40,
     unit: "500 Gm",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/KQ/AK/NW/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYSqlMLdq-r7TetaAxzABO3urZsDWSEHKOnX7JZ3ovrp6WU65TVu7q33sMY4iin6ZmlHQ&usqp=CAU"
   },
   {
     id: 13,
@@ -140,7 +140,7 @@
     oldPrice: 35,
     unit: "500 Gm",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/ZS/EN/LR/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/BO/VB/MY-41747332/bitter-gourd-500x500.jpg"
   },
   {
     id: 14,
@@ -151,7 +151,7 @@
     oldPrice: 40,
     unit: "1 Pc",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/FF/OB/VL/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9t3mk418FI2JwC1UxG8edGz5eEgcBLqU_A8Uo-XOV3z3tEw0otwPoZSMoLa8EgfEk8Q&usqp=CAU"
   },
   {
     id: 15,
@@ -162,7 +162,7 @@
     oldPrice: 30,
     unit: "500 Gm",
     discount: "33% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/TS/QL/HQ/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPe2mruM5wnvJpEdxhqSylTK-qufIUNQqaN4tW3eNLXd1-l8s2Yq-3RYLfIm3wyrPF5Cg&usqp=CAU"
   },
   {
     id: 16,
@@ -173,7 +173,7 @@
     oldPrice: 80,
     unit: "500 Gm",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/MO/WJ/YM/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtZw28f7Lr_X-sMPOBndtZBT3NDwRQK_Ar9nBYe2P-l_7VPZKQfIUiAJPBdE96bep09w&usqp=CAU"
   },
   {
     id: 17,
@@ -184,7 +184,7 @@
     oldPrice: 55,
     unit: "250 Gm",
     discount: "27% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/JW/LR/VC/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/12/477425464/MY/XK/XI/191995289/fresh-green-chilli.jpeg"
   },
   {
     id: 18,
@@ -195,7 +195,7 @@
     oldPrice: 20,
     unit: "1 Bunch",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/IC/HT/QK/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIP6_viLUlMq1SjL1W1RYydcnbwKlNxutiZ1oO1s6K54lSgDpUNaitPrLLO2C-9T8UAms&usqp=CAU"
   },
   {
     id: 19,
@@ -206,7 +206,7 @@
     oldPrice: 15,
     unit: "1 Bunch",
     discount: "33% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/QC/CS/OG/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2020/12/ZZ/JS/HC/75324731/18-500x500.jpg"
   },
   {
     id: 20,
@@ -217,7 +217,7 @@
     oldPrice: 70,
     unit: "500 Gm",
     discount: "28% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/UK/YA/DP/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/6/424285075/DC/CF/AN/180290635/organic-drumstick-vegetable.png"
   },
   {
     id: 21,
@@ -228,7 +228,7 @@
     oldPrice: 55,
     unit: "1 Kg",
     discount: "27% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/XD/VC/TI/2819967/pumpkin.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lngxIgAbladNwHo00DqzkC_PrmOuDq_6ylP1AdWXl3n0MZhBZPp98pOjR6ZjhVn0zi0&usqp=CAU"
   },
   {
     id: 22,
@@ -239,7 +239,7 @@
     oldPrice: 45,
     unit: "500 Gm",
     discount: "22% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/ZD/XT/CI/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2023/6/316774192/AM/QQ/MA/3042133/fresh-red-beetroot-500x500.jpg"
   },
   {
     id: 23,
@@ -250,7 +250,7 @@
     oldPrice: 90,
     unit: "200 Gm",
     discount: "22% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/12/JB/ZW/IT/129404566/fresh-mushroom.jpg"
+    img: "https://5.imimg.com/data5/ECOM/Default/2023/4/300008887/OA/QY/UW/147328428/1649691912112-sku-0266-0-500x500.jpg"
   },
   {
     id: 24,
@@ -261,7 +261,7 @@
     oldPrice: 50,
     unit: "2 Pc",
     discount: "30% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/KY/GL/OC/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/ECOM/Default/2023/4/300008121/SV/FR/AO/147328428/1649691879758-sku-0234-0.jpg"
   },
   {
     id: 25,
@@ -272,6 +272,6 @@
     oldPrice: 100,
     unit: "250 Gm",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/NQ/YU/FW/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCAs6vd0xfVoH-9Az1xZt1h39qUP4tO5G9Bhdptv_48FEfVhmoRLDAFdnIxD0lMfwjkCg&usqp=CAU"
   }
 ];
