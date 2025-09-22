@@ -45,9 +45,8 @@ const Navbar = () => {
                 📍 Pune
               </button>
               <ul className="dropdown-menu" aria-labelledby="locationDropdown">
-                <li><a className="dropdown-item" href="#">Mumbai</a></li>
-                <li><a className="dropdown-item" href="#">Delhi</a></li>
-                <li><a className="dropdown-item" href="#">Bangalore</a></li>
+                <li><a className="dropdown-item" href="#">Pune</a></li>
+                
               </ul>
             </div>
 

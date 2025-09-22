@@ -8,6 +8,7 @@ import Fruits from './pages/Fruits'
 import CategoryModal from './pages/CategoryModal'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
        <Route path='/login' element={<Login />}></Route>
        <Route path='/register' element={<Register />}></Route>
      </Routes>
+     <Footer/>
     </BrowserRouter>
      
     </>
