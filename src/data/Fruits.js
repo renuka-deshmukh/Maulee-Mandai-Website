@@ -8,7 +8,7 @@ export const fruits = [
     oldPrice: 200,
     unit: "1 Kg",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/HO/DR/ZK/2109684/apple.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4EmaUamxEeBrCzErdpgWRWm3WnsDqO92Ig&s"
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const fruits = [
     oldPrice: 60,
     unit: "1 Dozen",
     discount: "33% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/PE/VA/IB/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc_loekf5m_nCaHnEGBjdFvT--CNuRgfWFSg&s"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const fruits = [
     oldPrice: 150,
     unit: "1 Kg",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/KG/BP/DN/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPNGkLuP1tFV57BbS_ocEk3OANOJjH6eon1O62ZnojOuuMq0QC-4Yxr8AJ6L5WkNBf9A&usqp=CAU"
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const fruits = [
     oldPrice: 100,
     unit: "1 Kg",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/OM/XO/MK/2109684/orange.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR29ZNEkRse2olFBoN6gJkmgAdAmHg1WPhWawpTtlcSp3lNWGTI52Eb_fMIp6a4iFydbG4&usqp=CAU"
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const fruits = [
     oldPrice: 80,
     unit: "1 Pc",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/UV/YD/GL/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZa1DyjlodzFF03C83Vnix0gFq3THQjHaGp3XhCgnd1ZMGrA5bk8zIoGnbapIqPO-Nl_I&usqp=CAU"
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const fruits = [
     oldPrice: 120,
     unit: "1 Pc",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/DA/HK/XO/129404566/product-jpeg-500x500.jpg"
+    img: "https://5.imimg.com/data5/MC/IY/MY-68428614/pineapple.jpeg"
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ export const fruits = [
     oldPrice: 70,
     unit: "1 Kg",
     discount: "28% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/XU/TV/IX/2109684/guava.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD9JDBRI8VLW2zu8l7t9tYNSxFqhDWeeOD-mp_i_LILir_wEbGK0ykqObqVqVbFIHUYss&usqp=CAU"
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const fruits = [
     oldPrice: 130,
     unit: "500 Gm",
     discount: "23% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/YQ/MP/CF/2109684/grapes.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/10/456179589/XW/QG/CR/181530039/view-delicious-green-grapes-500x500.png"
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ export const fruits = [
     oldPrice: 220,
     unit: "1 Kg",
     discount: "18% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/JJ/XR/LH/2109684/pomegranate.jpg"
+    img: "https://5.imimg.com/data5/AU/VG/WB/SELLER-86819125/6-500x500.jpg"
   },
   {
     id: 10,
@@ -107,7 +107,7 @@ export const fruits = [
     oldPrice: 40,
     unit: "1 Kg",
     discount: "37% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/NO/ZX/JW/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgo_pqcWD6p77z6osT9Fi54pwFy5pR5k7mA8Rk858CO9FDKST6u2E-mbvRNLsj5txMRpw&usqp=CAU"
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ export const fruits = [
     oldPrice: 50,
     unit: "1 Kg",
     discount: "30% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/OK/VU/DO/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXubl7x1wr69aiZkv4Iqq_gZOvWMdECDLMyEbRT5ezymWFgymw-SDQ2H5dJH3npctCKjs&usqp=CAU"
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ export const fruits = [
     oldPrice: 150,
     unit: "200 Gm",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/EO/RX/QW/2109684/strawberry.jpg"
+    img: "https://5.imimg.com/data5/WI/MP/CL/SELLER-32388777/fresh-strawberry.jpeg"
   },
   {
     id: 13,
@@ -140,7 +140,7 @@ export const fruits = [
     oldPrice: 250,
     unit: "200 Gm",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/BL/WC/AV/2109684/blueberry.jpg"
+    img: "https://4.imimg.com/data4/IT/HS/ANDROID-34010204/product.jpeg"
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ export const fruits = [
     oldPrice: 180,
     unit: "200 Gm",
     discount: "17% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/CH/YA/VK/2109684/blackberry.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/2/392242461/RP/AK/QO/184540651/1-250x250.jpg"
   },
   {
     id: 15,
@@ -162,7 +162,7 @@ export const fruits = [
     oldPrice: 120,
     unit: "3 Pc",
     discount: "25% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/AN/OB/XD/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzeKrW_W8l3F3Oj6zS_p5PM_1wsoSsIaBcIw&s"
   },
   {
     id: 16,
@@ -173,7 +173,7 @@ export const fruits = [
     oldPrice: 180,
     unit: "1 Kg",
     discount: "22% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/MZ/HE/UE/2109684/lychee.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNVYRn2quRrDOgayHB55q9HJ5059ja_jMszCVJZ-jP4GjmKE7GgwXySOBT5-S9BEsBtdQ&usqp=CAU"
   },
   {
     id: 17,
@@ -184,7 +184,7 @@ export const fruits = [
     oldPrice: 150,
     unit: "1 Kg",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/ZX/ZR/TY/2109684/pear.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyYYfXz1pnw5mpZRXR3aLiKAPAVH8lkX-7BynUbGSL4cZAtCXl9QnZ2Rk7TSIZ-uSMS0w&usqp=CAU"
   },
   {
     id: 18,
@@ -195,7 +195,7 @@ export const fruits = [
     oldPrice: 160,
     unit: "1 Kg",
     discount: "19% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/AX/TO/UT/2109684/plum.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmku4OvcPuEskL1Efbsa3loXN3J6Ay3b-Pva0l5ju3o6Y62bWcKMwCczr6fsCPKpVT6tk&usqp=CAU"
   },
   {
     id: 19,
@@ -206,7 +206,7 @@ export const fruits = [
     oldPrice: 250,
     unit: "250 Gm",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/MX/BI/JY/2109684/cherry.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2023/10/353415838/EF/ZJ/GT/10347537/fresh-organic-cherry.jpg"
   },
   {
     id: 20,
@@ -217,7 +217,7 @@ export const fruits = [
     oldPrice: 220,
     unit: "1 Pc",
     discount: "18% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/TL/ZR/JK/2109684/dragon-fruit.jpg"
+    img: "https://5.imimg.com/data5/ECOM/Default/2024/9/450594169/ZI/HB/JY/61960950/draganwhite-1726213886104-500x500.jpeg"
   },
   {
     id: 21,
@@ -228,7 +228,7 @@ export const fruits = [
     oldPrice: 200,
     unit: "1 Kg",
     discount: "20% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/TV/OD/XH/2109684/custard-apple.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_LKYQuWsYDJGKQ2x5SCZcZWSPXre-_APPbEj1UCe-dmDhf-qJzMy6NcBttd6buaAxFvk&usqp=CAU"
   },
   {
     id: 22,
@@ -239,7 +239,7 @@ export const fruits = [
     oldPrice: 70,
     unit: "1 Pc",
     discount: "29% OFF",
-    img: "https://5.imimg.com/data5/ANDROID/Default/2020/12/ZA/OU/TZ/129404566/product-jpeg-500x500.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2vLSCltxjAj9HqyelXiMtmlGoAAEpccnfWDHaI6jO48Bao313dcqmKYh4TEyTZS6KPoo&usqp=CAU"
   },
   {
     id: 23,
@@ -250,7 +250,7 @@ export const fruits = [
     oldPrice: 350,
     unit: "500 Gm",
     discount: "14% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/LE/OO/YR/2109684/dates.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLq8z9xqwOF4fDdlQn5xPT4fNzte4Y_DC5XAmq4kOBB008nqJIzrG2Q8Xsu81m0byPmVM&usqp=CAU"
   },
   {
     id: 24,
@@ -261,7 +261,7 @@ export const fruits = [
     oldPrice: 400,
     unit: "500 Gm",
     discount: "12% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/ZW/ZI/SC/2109684/figs.jpg"
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/3/396429869/ZX/AZ/IB/199062278/dry-fig.jpg"
   },
   {
     id: 25,
@@ -272,6 +272,6 @@ export const fruits = [
     oldPrice: 300,
     unit: "500 Gm",
     discount: "17% OFF",
-    img: "https://5.imimg.com/data5/SELLER/Default/2020/9/WD/DB/IX/2109684/avocado.jpg"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitHdu04ahS4M-c2UYXfGW-jbNbhPvbF0VyXBkh0qhkkS_kGuFaKeD5-KBl9IHizBbYzM&usqp=CAU"
   }
 ];

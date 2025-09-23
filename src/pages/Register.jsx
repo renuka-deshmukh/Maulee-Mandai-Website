@@ -1,10 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
-const Register = () => {
+const Register = ({setIsRegistered}) => {
+
+  const [userName, setUserName]= useState('');
+  const [email, setEmail] = useState('');
+  const [pnumber, setPnumber] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
+  function handleRegister(event){
+    event.preventDefault()
+    const userData = {
+      name: userName,
+      email: email,
+      pnumber: pnumber,
+      password: password
+    }
+   localStorage.setItem('users', JSON.stringify(userData))
+   setIsRegistered(true)
+   navigate('/login')
+  }  
+  
   return (
     <div
       className="d-flex justify-content-center align-items-center vh-100"
@@ -23,7 +43,7 @@ const Register = () => {
           Please Fill the details and create account
         </p>
 
-        <form>
+        <form onSubmit={handleRegister}> 
           {/* Full Name */}
           <div className="input-group mb-3">
             <span className="input-group-text">
@@ -33,6 +53,8 @@ const Register = () => {
               type="text"
               className="form-control"
               placeholder="Full name"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
               required
             />
           </div>
@@ -46,6 +68,8 @@ const Register = () => {
               type="email"
               className="form-control"
               placeholder="Email Address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -60,6 +84,8 @@ const Register = () => {
               className="form-control"
               placeholder="Phone Number"
               maxLength="10"
+              value={pnumber}
+              onChange={(e) => setPnumber(e.target.value)}
               required
             />
           </div>
@@ -73,6 +99,8 @@ const Register = () => {
               type="password"
               className="form-control"
               placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>

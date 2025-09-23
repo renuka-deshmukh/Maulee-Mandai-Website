@@ -1,0 +1,12 @@
+.category-link {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.category-link:hover {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); /* red-pink gradient */
+  color: white !important;
+  /* border-radius: 4px; */
+}

@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../context/UserProvider";
 
 const Login = () => {
+    
+  const [pnumber, setPnumber] = useState('');
+  const [password, setPassword] = useState('');
+   const navigate = useNavigate();
+   const inputRef = useRef(null);
+
+   const { loggedUser, login } = useContext(UserContext);
+
+   function handleLogin(event){
+   event.preventDefault()
+
+   try {
+    const msg = login(pnumber, password)
+    if(msg) {
+      alert (msg);
+      navigate('/')
+    }
+    
+   } catch (error) {
+    console.log(error)
+   }
+   }
+
+  useEffect(() => {
+  if (inputRef.current) {
+    inputRef.current.focus();
+  }
+}, []); 
+
+
   return (
     <div
       className="d-flex justify-content-center align-items-center vh-100"
@@ -22,12 +53,15 @@ const Login = () => {
           Please Login to Continue Our App
         </p>
 
-        {/* Phone Input */}
+      <form onSubmit={handleLogin}>
+               {/* Phone Input */}
         <div className="mb-3">
           <input
             type="text"
             className="form-control"
             placeholder="📱 Enter Phone Number"
+            value={pnumber}
+            onChange={(e)=>setPnumber(e.target.value)}
           />
         </div>
 
@@ -37,11 +71,14 @@ const Login = () => {
             type="password"
             className="form-control"
             placeholder="🔒 Enter Password"
+            value={password}
+            onChange={(e)=>setPassword(e.target.value)}
           />
         </div>
 
         {/* Sign in Button */}
         <button
+          type="submit"
           className="btn w-100 mb-2"
           style={{ backgroundColor: "#8BC34A", color: "white" }}
         >
@@ -64,7 +101,6 @@ const Login = () => {
           >
             Sign In With OTP
           </button>
-
           {/* Link to Register Page */}
           <Link
             to="/register"
@@ -74,6 +110,7 @@ const Login = () => {
             Sign Up Now
           </Link>
         </div>
+      </form>
 
 
         {/* Footer */}

@@ -9,13 +9,15 @@ import CategoryModal from './pages/CategoryModal'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Footer from './components/Footer'
+import { UserProvider } from './context/UserProvider'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isRegistered, setIsRegistered] = useState(false);
 
   return (
     <>
     <BrowserRouter >
+    <UserProvider >
     <Navbar />
     <CategoryModal/>
      <Routes>
@@ -23,9 +25,10 @@ function App() {
       <Route path='/fresh-fruits' element={<Fruits />}></Route>
        <Route path='/fresh-veggies' element={<Veggies  />}></Route>
        <Route path='/login' element={<Login />}></Route>
-       <Route path='/register' element={<Register />}></Route>
+       <Route path='/register' element={<Register setIsRegistered = {setIsRegistered}/>}></Route>
      </Routes>
      <Footer/>
+     </UserProvider>
     </BrowserRouter>
      
     </>

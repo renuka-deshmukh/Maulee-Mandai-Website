@@ -4,12 +4,13 @@ import ItemCard from "./ItemCard";
 import { fruits } from "../data/Fruits";
 
 const Home = () => {
-  const scrollRef = useRef(null);
+  const veggiesRef = useRef(null);
+  const fruitsRef = useRef(null);
 
   // Scroll function
-  const scroll = (direction) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
+  const scroll = (ref, direction) => {
+    if (ref.current) {
+      ref.current.scrollBy({
         left: direction === "left" ? -300 : 300,
         behavior: "smooth",
       });
@@ -90,7 +91,7 @@ const Home = () => {
           <button
             className="btn btn-light shadow position-absolute top-50 start-0 translate-middle-y"
             style={{ zIndex: 10 }}
-            onClick={() => scroll("left")}
+            onClick={() => scroll(veggiesRef, "left")}
           >
             ◀
           </button>
@@ -106,7 +107,7 @@ const Home = () => {
               msOverflowStyle: "none",
               scrollbarWidth: "none"
             }}
-            ref={scrollRef}
+            ref={veggiesRef}
           >
             {veggies.map((veg) => (
               <div key={veg.id} style={{ flex: "0 0 auto" }}>
@@ -119,7 +120,7 @@ const Home = () => {
           <button
             className="btn btn-light shadow position-absolute top-50 end-0 translate-middle-y"
             style={{ zIndex: 10 }}
-            onClick={() => scroll("right")}
+            onClick={() => scroll(veggiesRef, "right")}
           >
             ▶
           </button>
@@ -133,7 +134,7 @@ const Home = () => {
           <button
             className="btn btn-light shadow position-absolute top-50 start-0 translate-middle-y"
             style={{ zIndex: 10 }}
-            onClick={() => scroll("left")}
+            onClick={() => scroll(fruitsRef,"left")}
           >
             ◀
           </button>
@@ -149,7 +150,7 @@ const Home = () => {
               msOverflowStyle: "none",
               scrollbarWidth: "none"
             }}
-            ref={scrollRef}
+            ref={fruitsRef}
           >
             {fruits.map((veg) => (
               <div key={veg.id} style={{ flex: "0 0 auto" }}>
@@ -162,7 +163,7 @@ const Home = () => {
           <button
             className="btn btn-light shadow position-absolute top-50 end-0 translate-middle-y"
             style={{ zIndex: 10 }}
-            onClick={() => scroll("right")}
+            onClick={() => scroll(fruitsRef, "right")}
           >
             ▶
           </button>

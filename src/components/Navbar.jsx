@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
@@ -46,7 +47,7 @@ const Navbar = () => {
               </button>
               <ul className="dropdown-menu" aria-labelledby="locationDropdown">
                 <li><a className="dropdown-item" href="#">Pune</a></li>
-                
+
               </ul>
             </div>
 
@@ -121,7 +122,7 @@ const Navbar = () => {
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item me-3">
                 <a
-                  className="nav-link"
+                  className="nav-link category-link"
                   href="#"
                   data-bs-toggle="modal"
                   data-bs-target="#categoryModal"
@@ -140,6 +141,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+
         </div>
       </nav>
     </>

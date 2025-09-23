@@ -1,0 +1,14 @@
+/* 🔴 Gradient background (dark to light red, transparent effect) */
+.gradient-header {
+  background: rgb(2, 2, 90)
+}
+
+/* Remove border-radius from modal */
+.no-radius {
+  border-radius: 0 !important;
+}
+
+/* Ensure header and footer also have no curves */
+.modal-header, .modal-footer {
+  border-radius: 0 !important;
+}
