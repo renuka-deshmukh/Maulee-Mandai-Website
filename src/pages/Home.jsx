@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { veggies } from "../data/Veggies";
 import ItemCard from "./ItemCard";
 import { fruits } from "../data/Fruits";
@@ -6,6 +6,9 @@ import { fruits } from "../data/Fruits";
 const Home = () => {
   const veggiesRef = useRef(null);
   const fruitsRef = useRef(null);
+
+  const [readMore, setReadMore] = useState();
+
 
   // Scroll function
   const scroll = (ref, direction) => {
@@ -19,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-    
+
       <div style={{ backgroundColor: "#f4f6f8ff" }}>
         <div className="container my-4 bg-light">
           <div className="row">
@@ -134,7 +137,7 @@ const Home = () => {
           <button
             className="btn btn-light shadow position-absolute top-50 start-0 translate-middle-y"
             style={{ zIndex: 10 }}
-            onClick={() => scroll(fruitsRef,"left")}
+            onClick={() => scroll(fruitsRef, "left")}
           >
             ◀
           </button>
@@ -193,8 +196,57 @@ const Home = () => {
               all other products are way much cheaper than the market prices and the competitor's prices....
             </p>
 
+            {readMore && (
+              <>
+                <p style={{ textAlign: "justify" }}>
+                  The ease of using Mandai App and the Mandai website has satisfied all our customers in Pune and PCMC and has made online
+                  fruits and vegetable shopping more affordable. We are happy with our daily growing orders.</p>
+                <h3><b style={{ color: 'forestgreen' }}>
+                  Sprouts, Exotic vegetables, dried veggies, and many more to choose</b></h3>
+
+                <p style={{ textAlign: "justify" }}>
+                  When you visit Mandai, you will come to know that even if we have a wide variety of fresh fruits and vegetables to offer, we have not messed up the user experience by adding unwanted products.
+                  Our product includes all the necessary daily requirements of every person in Pune and PCMC.
+                  Free yourself from the hassle of soaking and sprouting the grains. Not only fresh fruits and vegetables, but we
+                  also provide fresh and healthy Sprouts since it is the basic requirement of every household in Pune and PCMC. Along with that, we also provide Dried veggies, seasonal fruits, Exotic Vegetables.
+                </p>
+
+                <h3><b style={{ color: 'forestgreen' }}>
+                  What About Packaging..?</b></h3>
+
+                <p style={{ textAlign: "justify" }}>
+                  Well, Packaging of fruits and vegetables is our utmost priority at Mandai. Proper Hygiene is
+                  maintained during packaging and delivering the products to your doorstep.
+                </p>
+
+                <h3><b style={{ color: 'forestgreen' }}>
+                  Payment Options..?</b></h3>
+
+                <p style={{ textAlign: "justify" }}>
+                  Purchasing fresh fruits and vegetables In Pune is made easy. you can pay online using your Gpay, card, or can opt for cash on delivery (COD). <br />
+                  But we request you to please go for Online payment as it is safe and secure and make us move one more step towards digital India.
+                </p>
+
+                <h3><b style={{ color: 'forestgreen' }}>
+                  Delivery in all Parts of Pune and PCMC ?</b></h3>
+
+                <p style={{ textAlign: "justify" }}>
+                  Mandai delivers fresh fruits and vegetables in all parts and nooks of Pune and a few areas of PCMC.
+                  Happy Shopping. <br /> Stay Safe Stay Healthy
+                </p>
+
+
+              </>
+            )}
+
+
             <div className="text-end">
-              <button className="btn btn-success text-dark fw-bold p-2">Read More</button>
+              <button
+                className="btn btn-success text-dark fw-bold p-2"
+                onClick={() => setReadMore(!readMore)}
+              >
+                {readMore ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
 
