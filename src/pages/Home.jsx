@@ -234,12 +234,8 @@ const Home = () => {
                   Mandai delivers fresh fruits and vegetables in all parts and nooks of Pune and a few areas of PCMC.
                   Happy Shopping. <br /> Stay Safe Stay Healthy
                 </p>
-
-
               </>
             )}
-
-
             <div className="text-end">
               <button
                 className="btn btn-success text-dark fw-bold p-2"

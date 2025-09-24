@@ -2,9 +2,13 @@ import React from "react";
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 
 const Navbar = () => {
+
+  const { cartItems } = useCart();
+
   return (
     <>
       {/* Top Navbar */}
@@ -18,6 +22,15 @@ const Navbar = () => {
               style={{ width: "120px" }}
             />
           </a>
+
+          {/* Right-side items */}
+        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li className="nav-item me-3">
+            <Link className="nav-link" to="/cart">
+              🛒 Cart ({cartItems.length})
+            </Link>
+          </li>
+        </ul>
 
           {/* Toggler for mobile */}
           <button
