@@ -1,30 +1,67 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+const Register = () => {
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
+  const [pnumber, setPnumber] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState({ type: "", text: "" }); // success/error messages
 
-const Register = ({setIsRegistered}) => {
-
-  const [userName, setUserName]= useState('');
-  const [email, setEmail] = useState('');
-  const [pnumber, setPnumber] = useState('');
-  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  function handleRegister(event){
-    event.preventDefault()
+  function handleRegister(event) {
+    event.preventDefault();
+
+    if (pnumber.length !== 10) {
+      setMessage({ type: "danger", text: "Phone number must be 10 digits" });
+      return;
+    }
+    if (password.length < 6) {
+      setMessage({
+        type: "danger",
+        text: "Password must be at least 6 characters",
+      });
+      return;
+    }
+
     const userData = {
       name: userName,
       email: email,
       pnumber: pnumber,
-      password: password
-    }
-   localStorage.setItem('users', JSON.stringify(userData))
-   setIsRegistered(true)
-   navigate('/login')
-  }  
+      password: password,
+    };
+
+    // Get users from localStorage
+    let existingUsers = JSON.parse(localStorage.getItem("users"));
+
   
+    if (!Array.isArray(existingUsers)) {
+      existingUsers = [];
+    }
+
+    // Prevent duplicate email
+    const userExists = existingUsers.find((user) => user.email === email);
+    if (userExists) {
+      setMessage({ type: "danger", text: "User with this email already exists" });
+      return;
+    }
+
+    existingUsers.push(userData);
+    localStorage.setItem("users", JSON.stringify(existingUsers));
+
+    setMessage({ type: "success", text: "Registration successful! Redirecting..." });
+
+    setUserName("");
+    setEmail("");
+    setPnumber("");
+    setPassword("");
+
+    setTimeout(() => navigate("/login"), 2000);
+  }
+
   return (
     <div
       className="d-flex justify-content-center align-items-center vh-100"
@@ -36,14 +73,21 @@ const Register = ({setIsRegistered}) => {
     >
       <div
         className="card shadow p-4"
-        style={{ width: "500px", borderRadius: "5px" }}
+        style={{ width: "500px", borderRadius: "8px" }}
       >
-        <h4 className="text-center fw-bold mb-2">Sign Up Now !</h4>
+        <h4 className="text-center fw-bold mb-2">Sign Up Now!</h4>
         <p className="text-center text-muted mb-4">
-          Please Fill the details and create account
+          Please fill the details to create your account
         </p>
 
-        <form onSubmit={handleRegister}> 
+        {/*  Show Alerts */}
+        {message.text && (
+          <div className={`alert alert-${message.type}`} role="alert">
+            {message.text}
+          </div>
+        )}
+
+        <form onSubmit={handleRegister}>
           {/* Full Name */}
           <div className="input-group mb-3">
             <span className="input-group-text">
@@ -125,11 +169,7 @@ const Register = ({setIsRegistered}) => {
         {/* Footer */}
         <div className="text-center mt-4 small text-muted">
           Designed &amp; Developed By{" "}
-          <a
-            href="https://www.syntech.co.in/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://www.syntech.co.in/" target="_blank" rel="noreferrer">
             <u>Syntech Solutions</u>
           </a>
           <br />

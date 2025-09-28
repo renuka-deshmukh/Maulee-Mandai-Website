@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, useNavigate } from "react-router-dom";
-import { UserContext } from "../context/UserProvider";
+import { AuthContext } from "../context/AuthProvider";
 
 const Login = () => {
     
@@ -10,11 +10,11 @@ const Login = () => {
    const navigate = useNavigate();
    const inputRef = useRef(null);
 
-   const { loggedUser, login } = useContext(UserContext);
+   const { loggedUser, login } = useContext(AuthContext);
+
 
    function handleLogin(event){
    event.preventDefault()
-
    try {
     const msg = login(pnumber, password)
     if(msg) {
@@ -32,6 +32,7 @@ const Login = () => {
     inputRef.current.focus();
   }
 }, []); 
+
 
 
   return (
