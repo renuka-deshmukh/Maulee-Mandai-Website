@@ -9,17 +9,16 @@ import CategoryModal from './pages/CategoryModal'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Footer from './components/Footer'
-import { UserProvider } from './context/UserProvider'
 import ProductInfo from './pages/ProductInfo'
 import { CartProvider } from './context/CartContext'
+import { AuthProvider } from './context/AuthProvider'
 
 function App() {
-  const [isRegistered, setIsRegistered] = useState(false);
 
   return (
     <>
     <BrowserRouter >
-    <UserProvider >
+    <AuthProvider >
       <CartProvider> 
     <Navbar />
     <CategoryModal/>
@@ -29,11 +28,11 @@ function App() {
       <Route path='/fresh-fruits' element={<Fruits />}></Route>
        <Route path='/fresh-veggies' element={<Veggies  />}></Route>
        <Route path='/login' element={<Login />}></Route>
-       <Route path='/register' element={<Register setIsRegistered = {setIsRegistered}/>}></Route>
+       <Route path='/register' element={<Register />}></Route>
      </Routes>
      <Footer/>
      </CartProvider>
-     </UserProvider>
+     </AuthProvider>
     </BrowserRouter>
      
     </>

@@ -1,0 +1,70 @@
+/* Scroll Container */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none; /* Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+.scroll-item {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border: none;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.scroll-btn.left {
+  left: -15px;
+}
+.scroll-btn.right {
+  right: -15px;
+}
+
+/* Info Section */
+.info-text {
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .scroll-btn {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+  h3 {
+    font-size: 1.4rem !important;
+  }
+  .info-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .scroll-btn {
+    display: none; /* hide scroll buttons on small devices */
+  }
+  .info-text {
+    text-align: left;
+  }
+}

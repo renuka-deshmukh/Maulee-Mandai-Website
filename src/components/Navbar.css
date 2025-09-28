@@ -1,3 +1,22 @@
+
+/* Smaller search bar on mobile */
+@media (max-width: 768px) {
+  .navbar form {
+    max-width: 70% !important;
+  }
+  .navbar .nav-link {
+    font-size: 14px;
+  }
+}
+
+/* Hide phone number and offers on very small devices */
+@media (max-width: 576px) {
+  .navbar .nav-item a[href^="tel"],
+  .navbar .nav-item .nav-link[href="#"]:not(.category-link) {
+    display: none;
+  }
+}
+
 .category-link {
   border-left: 1px solid black;
   border-right: 1px solid black;

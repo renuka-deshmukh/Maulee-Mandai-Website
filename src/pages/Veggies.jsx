@@ -2,12 +2,12 @@ import React from "react";
 import ItemCard from "./ItemCard";
 import { veggies } from "../data/Veggies";
 import { Link } from "react-router-dom";
+import "./Veggies.css"
 
-// ✅ same categories from your modal
 const categories = [
   { name: "Root Vegetables", img: "https://mandai.in/admin/assets/admin/images/mandai_online/category/root_vegetables.png" },
   { name: "Leafy Vegetables", img: "https://mandai.in/admin/assets/admin/images/mandai_online/category/leafy_vegetables.png" },
-  { name: "Fruit Vegetables", img: "https://mandai.in/admin/assets/admin/images/mandai_online/category/fruit_vegetables.png"},
+  { name: "Fruit Vegetables", img: "https://mandai.in/admin/assets/admin/images/mandai_online/category/fruit_vegetables.png" },
   { name: "Exotic Vegetables", img: "https://mandai.in/admin/assets/admin/images/mandai_online/category/exotic_vegetables.png" },
   { name: "Sprouts", img: "https://mandai.in/admin/assets/admin/images/mandai_online/category/sprouts.png" },
   { name: "Fresh Fruits", img: "https://mandai.in/admin/assets/admin/images/mandai_online/category/fresh_fruits.png" },
@@ -17,9 +17,9 @@ const categories = [
 
 const Veggies = () => {
   return (
-    <div className="container mt-4">
+    <div className="veggies-page">
       {/* Breadcrumb */}
-      <nav aria-label="breadcrumb">
+      <nav aria-label="breadcrumb" className="container">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
             <Link to="/">Home</Link>
@@ -30,17 +30,21 @@ const Veggies = () => {
         </ol>
       </nav>
 
-      {/* Categories Section in ONE row */}
-      <h4 className="fw-bold mb-3">Categories</h4>
+      {/* Categories Section */}
       <div
-        className="d-flex overflow-auto mb-4"
-        style={{ gap: "20px", whiteSpace: "nowrap" }}
+        className="d-flex justify-content-center overflow-auto mb-4 categories-row"
+        style={{ gap: "20px", whiteSpace: "nowrap", padding: "10px 0" }}
       >
         {categories.map((cat, index) => (
           <div
             key={index}
-            className="text-center flex-shrink-0"
-            style={{ width: "110px" }}
+            className="text-center flex-shrink-0 category-card"
+            style={{
+              width: "110px",
+              background: "#fff",
+              borderRadius: "10px",
+              padding: "10px",
+            }}
           >
             <img
               src={cat.img}
@@ -53,12 +57,16 @@ const Veggies = () => {
       </div>
 
       {/* Veggies Cards */}
-      <h3 className="mb-3 fw-bold">Fresh Veggies</h3>
-      <div className="d-flex flex-wrap justify-content-start">
-        {veggies.map((veg) => (
-          <ItemCard key={veg.id} item={veg} />
-        ))}
-      </div>
+      <section className="veggies-cards-section">
+        <div className="container-fluid">
+          <h3 className="mb-3 fw-bold">Fresh Veggies</h3>
+          <div className="veggies-cards">
+            {veggies.map((veg) => (
+              <ItemCard key={veg.id} item={veg} />
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
-
+import { AuthContext } from "../context/AuthProvider";
 
 const Navbar = () => {
-
   const { cartItems } = useCart();
+  const { loggedUser, logout } = useContext(AuthContext);
 
   return (
     <>
@@ -15,22 +15,23 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div className="container-fluid">
           {/* Logo */}
-          <a className="navbar-brand d-flex align-items-center" href="#">
+          <Link className="navbar-brand d-flex align-items-center" to="/">
             <img
               src="https://mandai.in/assets/common/images/logo.jpg"
               alt="Logo"
               style={{ width: "120px" }}
             />
-          </a>
+          </Link>
 
           {/* Right-side items */}
-        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-          <li className="nav-item me-3">
-            <Link className="nav-link" to="/cart">
-              🛒 Cart ({cartItems.length})
-            </Link>
-          </li>
-        </ul>
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center d-md-none">
+            {/* Show cart icon only on small screens */}
+            <li className="nav-item me-3">
+              <Link className="nav-link" to="/cart">
+                🛒 ({cartItems.length})
+              </Link>
+            </li>
+          </ul>
 
           {/* Toggler for mobile */}
           <button
@@ -59,8 +60,11 @@ const Navbar = () => {
                 📍 Pune
               </button>
               <ul className="dropdown-menu" aria-labelledby="locationDropdown">
-                <li><a className="dropdown-item" href="#">Pune</a></li>
-
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Pune
+                  </a>
+                </li>
               </ul>
             </div>
 
@@ -79,37 +83,83 @@ const Navbar = () => {
 
             {/* Right-side items */}
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+              <li className="nav-item me-3 d-none d-md-block">
+                <Link className="nav-link" to="/cart">
+                  🛒 Cart ({cartItems.length})
+                </Link>
+              </li>
               <li className="nav-item me-3">
                 <a className="nav-link" href="tel:+917030737373">
                   📞 +91 7030 73 73 73
                 </a>
               </li>
               <li className="nav-item me-3">
-                <a className="nav-link" href="#">🎁 Offers</a>
+                <a className="nav-link" href="#">
+                  🎁 Offers
+                </a>
               </li>
               <li className="nav-item me-3">
-                <a className="nav-link" href="#">❓ Help</a>
-              </li>
-              {/* Login Dropdown */}
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="loginDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  🔑 Login Section
+                <a className="nav-link" href="#">
+                  ❓ Help
                 </a>
-                <ul
-                  className="dropdown-menu dropdown-menu-end"
-                  aria-labelledby="loginDropdown"
-                >
-                  <li><Link className="dropdown-item" to="/login">Login</Link></li>
-                  <li><a className="dropdown-item" href="#">Offers</a></li>
-                </ul>
               </li>
+
+              {/* User Section */}
+              {loggedUser ? (
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle fw-bold"
+                    href="#"
+                    id="userDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    👤 {loggedUser.name}
+                  </a>
+                  <ul
+                    className="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="userDropdown"
+                  >
+                    <li>
+                      <button
+                        className="dropdown-item text-danger"
+                        onClick={logout}
+                      >
+                        🚪 Logout
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              ) : (
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="loginDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    🔑 Login
+                  </a>
+                  <ul
+                    className="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="loginDropdown"
+                  >
+                    <li>
+                      <Link className="dropdown-item" to="/login">
+                        Login
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/register">
+                        Register
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              )}
             </ul>
           </div>
         </div>
@@ -144,17 +194,22 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item me-3">
-                <Link className="nav-link active" to="/">Home</Link>
+                <Link className="nav-link active" to="/">
+                  Home
+                </Link>
               </li>
               <li className="nav-item me-3">
-                <Link className="nav-link" to="/fresh-veggies">Fresh Veggies</Link>
+                <Link className="nav-link" to="/fresh-veggies">
+                  Fresh Veggies
+                </Link>
               </li>
               <li className="nav-item me-3">
-                <Link className="nav-link" to="/fresh-fruits">Fresh Fruits</Link>
+                <Link className="nav-link" to="/fresh-fruits">
+                  Fresh Fruits
+                </Link>
               </li>
             </ul>
           </div>
-
         </div>
       </nav>
     </>
